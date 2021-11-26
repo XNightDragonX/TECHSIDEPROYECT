@@ -7,7 +7,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Tangente extends AppCompatActivity {
+public class tangenteActivity extends AppCompatActivity {
 
     private EditText editTextX;
     private EditText editTextTotal;

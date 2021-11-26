@@ -42,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
         Button_division = findViewById(R.id.Button_division);
         Button_Factorial = findViewById(R.id.Button_Factorial);
         Button_kelvin = findViewById(R.id.Button_kelvin);
+        Button_tangente = findViewById(R.id.Button_tangente);
 
         Button_suma.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -124,7 +125,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
     private void abrirTan() {
-        Intent intent = new Intent(this , Tangente.class);
+        Intent intent = new Intent(this , tangenteActivity.class);
         startActivity(intent);
     }
 }
