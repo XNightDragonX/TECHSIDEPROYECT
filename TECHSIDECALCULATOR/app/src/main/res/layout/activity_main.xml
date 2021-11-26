@@ -41,6 +41,12 @@
             android:layout_height="wrap_content"
             android:text="Factorial" />
 
+        <Button
+            android:id="@+id/Button_IMC"
+            android:layout_width="164dp"
+            android:layout_height="wrap_content"
+            android:text="IMC" />
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
