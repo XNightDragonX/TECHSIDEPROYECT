@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TECHSIDECALCULATOR">
         <activity
+            android:name=".ConversionData"
+            android:exported="true" />
+        <activity
             android:name=".SumaActivity"
             android:exported="false" />
         <activity

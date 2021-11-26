@@ -23,6 +23,8 @@ public class MainActivity extends AppCompatActivity {
     { }
     public void tangente(View miView)
     { }
+    public void Convert(View miView)
+    { }
 
     private Button Button_suma;
     private Button Button_resta;
@@ -31,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
     private Button Button_Factorial;
     private Button Button_kelvin;
     private Button Button_tangente;
+    private Button Button_convert;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
         Button_Factorial = findViewById(R.id.Button_Factorial);
         Button_kelvin = findViewById(R.id.Button_kelvin);
         Button_tangente = findViewById(R.id.Button_tangente);
+        Button_convert = findViewById(R.id.Button_convert);
 
         Button_suma.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -92,7 +96,12 @@ public class MainActivity extends AppCompatActivity {
                 abrirTan();
             }
         });
-
+        Button_convert.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                abrirConvert();
+            }
+        });
     }
 
     private void abrirSuma() {
@@ -126,6 +135,10 @@ public class MainActivity extends AppCompatActivity {
     }
     private void abrirTan() {
         Intent intent = new Intent(this , tangenteActivity.class);
+        startActivity(intent);
+    }
+    private void abrirConvert() {
+        Intent intent = new Intent(this , ConversionData.class);
         startActivity(intent);
     }
 }

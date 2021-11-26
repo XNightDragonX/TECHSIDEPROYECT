@@ -19,12 +19,10 @@ public class FactorialActivity extends AppCompatActivity {
         setContentView(R.layout.activity_factorial);
         editText = findViewById(R.id.editTextNumber);
         editTextTotal = findViewById(R.id.editTextNumberTotal );
-
         editText.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
             public void onFocusChange(View v, boolean hasFocus) {
-                if( !hasFocus )
-                {
+                if( !hasFocus ){
                     realizaOperacion( );
                 }
             }
@@ -44,7 +42,8 @@ public class FactorialActivity extends AppCompatActivity {
         int fx = total;
         int con = total;
         while ( con!=0) {
-            total=total*con; con--;
+            total=total*con;
+            con--;
         }
         total = total/fx;
         editTextTotal.setText( String.format("%d" , total ) , TextView.BufferType.SPANNABLE );
