@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     { }
     public void factorial(View miView)
     { }
-    public void IMC(View miView)
+    public void kelvin(View miView)
     { }
 
     private Button Button_suma;
@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
     private Button Button_division;
     private Button Button_multiplicacion;
     private Button Button_Factorial;
-    private Button Button_IMC;
+    private Button Button_kelvin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         Button_multiplicacion = findViewById(R.id.Button_multiplicacion);
         Button_division = findViewById(R.id.Button_division);
         Button_Factorial = findViewById(R.id.Button_Factorial);
-        Button_IMC = findViewById(R.id.Button_IMC);
+        Button_kelvin = findViewById(R.id.Button_kelvin);
 
         Button_suma.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -75,10 +75,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button_IMC.setOnClickListener(new View.OnClickListener() {
+        Button_kelvin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                abrirIMC();
+                abrirKelvin();
             }
         });
 
@@ -109,8 +109,8 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    private void abrirIMC() {
-        Intent intent = new Intent(this , IMCActivity.class);
+    private void abrirKelvin() {
+        Intent intent = new Intent(this , KelvinActivity.class);
         startActivity(intent);
     }
 }

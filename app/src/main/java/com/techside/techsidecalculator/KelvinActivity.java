@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class IMCActivity extends AppCompatActivity {
+public class KelvinActivity extends AppCompatActivity {
 
     private EditText editTextX;
     private EditText editTextY;
@@ -40,24 +40,24 @@ public class IMCActivity extends AppCompatActivity {
             }
         });
 
-   }
+    }
 
     private void realizaOperacion()
     {
-        int peso = 0;
-        float altura = 0;
-        float total =0;
-        if( editTextX.getText().toString() != null && editTextY.getText().toString() != null)
+        int total = 0;
+        if( editTextX.getText().toString() != null )
         {
             if( isEntero( editTextX.getText().toString() ) )
             {
-                peso = getEntero( editTextX.getText().toString() );
+                total += getEntero( editTextX.getText().toString() );
             }
+        }
+        if( editTextY.getText().toString() != null )
+        {
             if( isEntero( editTextY.getText().toString() ) )
             {
-                altura = (getEntero( editTextY.getText().toString()))/10f;
+                total += getEntero( editTextY.getText().toString() );
             }
-            total = peso/((altura * altura));
         }
         editTextTotal.setText( String.format("%d" , total ) , TextView.BufferType.SPANNABLE );
         editTextTotal.setEnabled( false );

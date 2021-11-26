@@ -42,10 +42,10 @@
             android:text="Factorial" />
 
         <Button
-            android:id="@+id/Button_IMC"
+            android:id="@+id/Button_kelvin"
             android:layout_width="164dp"
             android:layout_height="wrap_content"
-            android:text="IMC" />
+            android:text="Fahrenheit a Kelvin" />
 
     </LinearLayout>
 
