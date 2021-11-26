@@ -47,6 +47,12 @@
             android:layout_height="wrap_content"
             android:text="Fahrenheit a Kelvin" />
 
+        <Button
+            android:id="@+id/Button_tangente"
+            android:layout_width="164dp"
+            android:layout_height="wrap_content"
+            android:text="Tangente" />
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

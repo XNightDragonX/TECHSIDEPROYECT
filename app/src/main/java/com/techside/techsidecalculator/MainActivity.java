@@ -21,6 +21,8 @@ public class MainActivity extends AppCompatActivity {
     { }
     public void kelvin(View miView)
     { }
+    public void tangente(View miView)
+    { }
 
     private Button Button_suma;
     private Button Button_resta;
@@ -28,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
     private Button Button_multiplicacion;
     private Button Button_Factorial;
     private Button Button_kelvin;
+    private Button Button_tangente;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -82,6 +85,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button_tangente.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                abrirTan();
+            }
+        });
+
     }
 
     private void abrirSuma() {
@@ -111,6 +121,10 @@ public class MainActivity extends AppCompatActivity {
 
     private void abrirKelvin() {
         Intent intent = new Intent(this , KelvinActivity.class);
+        startActivity(intent);
+    }
+    private void abrirTan() {
+        Intent intent = new Intent(this , Tangente.class);
         startActivity(intent);
     }
 }
