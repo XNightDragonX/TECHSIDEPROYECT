@@ -6,56 +6,63 @@
     android:layout_height="match_parent"
     tools:context=".SumaActivity">
 
-    <LinearLayout
+    <EditText
+        android:id="@+id/editTextNumberTotal"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="76dp"
+        android:ems="10"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="312dp" />
 
-        <EditText
-            android:id="@+id/editTextTextPersonName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Peso en Kg:" />
+    <EditText
+        android:id="@+id/editTextNumberY"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:layout_marginBottom="448dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
-        <EditText
-            android:id="@+id/editTextNumberX"
-            android:layout_width="match_parent"
-            android:layout_height="76dp"
-            android:ems="10"
-            android:inputType="number" />
+    <EditText
+        android:id="@+id/editTextNumberX"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:layout_marginTop="86dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.026" />
 
-        <EditText
-            android:id="@+id/editTextTextPersonName2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Altura en cm:" />
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Peso en Kg:"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.103" />
 
-        <EditText
-            android:id="@+id/editTextNumberY"
-            android:layout_width="match_parent"
-            android:layout_height="76dp"
-            android:ems="10"
-            android:inputType="number" />
-
-        <EditText
-            android:id="@+id/editTextTextPersonName3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="IMC:" />
-
-        <EditText
-            android:id="@+id/editTextNumberTotal"
-            android:layout_width="match_parent"
-            android:layout_height="76dp"
-            android:ems="10"
-            android:inputType="number" />
-
-    </LinearLayout>
+    <Button
+        android:id="@+id/Button_Total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.528"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.674" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

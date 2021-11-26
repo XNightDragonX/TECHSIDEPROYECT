@@ -40,24 +40,24 @@ public class IMCActivity extends AppCompatActivity {
             }
         });
 
-    }
+   }
 
     private void realizaOperacion()
     {
-        int total = 0;
-        if( editTextX.getText().toString() != null )
+        int peso = 0;
+        float altura = 0;
+        float total =0;
+        if( editTextX.getText().toString() != null && editTextY.getText().toString() != null)
         {
             if( isEntero( editTextX.getText().toString() ) )
             {
-                total += getEntero( editTextX.getText().toString() );
+                peso = getEntero( editTextX.getText().toString() );
             }
-        }
-        if( editTextY.getText().toString() != null )
-        {
             if( isEntero( editTextY.getText().toString() ) )
             {
-                total += getEntero( editTextY.getText().toString() );
+                altura = (getEntero( editTextY.getText().toString()))/10f;
             }
+            total = peso/((altura * altura));
         }
         editTextTotal.setText( String.format("%d" , total ) , TextView.BufferType.SPANNABLE );
         editTextTotal.setEnabled( false );

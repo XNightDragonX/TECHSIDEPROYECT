@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
         Button_multiplicacion = findViewById(R.id.Button_multiplicacion);
         Button_division = findViewById(R.id.Button_division);
         Button_Factorial = findViewById(R.id.Button_Factorial);
+        Button_IMC = findViewById(R.id.Button_IMC);
 
         Button_suma.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -109,7 +110,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void abrirIMC() {
-        Intent intent = new Intent(this , FactorialActivity.class);
+        Intent intent = new Intent(this , IMCActivity.class);
         startActivity(intent);
     }
 }
