@@ -41,10 +41,12 @@ public class FactorialActivity extends AppCompatActivity {
                 total += getEntero( editText.getText().toString() );
             }
         }
+        int fx = total;
         int con = total;
         while ( con!=0) {
             total=total*con; con--;
         }
+        total = total/fx;
         editTextTotal.setText( String.format("%d" , total ) , TextView.BufferType.SPANNABLE );
         editTextTotal.setEnabled( false );
     }
