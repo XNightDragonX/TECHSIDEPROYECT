@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/Button_suma"
+            android:layout_width="163dp"
+            android:layout_height="wrap_content"
+            android:text="Suma" />
+
+        <Button
+            android:id="@+id/Button_resta"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="resta" />
+
+        <Button
+            android:id="@+id/Button_multiplicacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="multiplicación" />
+
+        <Button
+            android:id="@+id/Button_division"
+            android:layout_width="162dp"
+            android:layout_height="wrap_content"
+            android:text="división" />
+
+        <Button
+            android:id="@+id/Button_Factorial"
+            android:layout_width="168dp"
+            android:layout_height="wrap_content"
+            android:text="Factorial" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
